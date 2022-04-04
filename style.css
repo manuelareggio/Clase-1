@@ -2,3 +2,9 @@ body{background-color:black;}
 *{color:white}
 
 h1{color:palevioletred}
+#ModeloDeCaja{
+    width: 300px;
+    border: 15px solid blueviolet;
+    padding: 50px;
+    margin: 20px;
+}
