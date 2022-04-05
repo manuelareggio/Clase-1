@@ -26,4 +26,8 @@ header{
 }
 menu{
     list-style-type:none;
+
+}
+menu>a>li{
+    display: inline;
 }
