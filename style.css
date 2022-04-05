@@ -9,5 +9,11 @@ h1{color:palevioletred}
     margin: 20px;
 }
 #FotoOddieCom{
-width:50px ;
+width:100px ;
+}
+
+#iconowpp{
+    position: fixed;
+    bottom: 30px;
+    margin: 20px;
 }
