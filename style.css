@@ -17,3 +17,13 @@ width:100px ;
     bottom: 30px;
     right: 20px;
 }
+header{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0px;
+    background-color:grey;
+
+}
+menu{
+    list-style-type:none;
+}
