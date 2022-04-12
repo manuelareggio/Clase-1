@@ -1,13 +1,8 @@
-body{background-color:black;}
-*{color:white}
+body{background-color:#EDE7DC;}
+*{color:#A47551}
 
-h1{color:palevioletred}
-#ModeloDeCaja{
-    width: 300px;
-    border: 15px solid blueviolet;
-    padding: 50px;
-    margin: 20px;
-}
+h1{color:#CCAFA5}
+
 #FotoOddieCom{
 width:100px ;
 }
@@ -17,17 +12,6 @@ width:100px ;
     bottom: 30px;
     right: 20px;
 }
-header{
-    position:sticky;
-    position:-webkit-sticky;
-    top:0px;
-    background-color:grey;
-
-}
-menu{
-    list-style-type:none;
-
-}
-menu>a>li{
-    display: inline;
+.navbar-brand{
+    display: none;
 }
