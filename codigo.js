@@ -64,4 +64,9 @@ El or se escribe como la doble barra vertical || (shift y abajo de delete)
 
 prompt sirve para leer un dato 
 alert sirve para presentar un cartelito 
+
+para vincular mi JV con mi html lo que hago es 
+</script>
+<script src="./script.js">
+</script> 
 */

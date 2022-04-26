@@ -83,7 +83,6 @@ let numero4= prompt("Ingrese el cuarto numero ")
 document.write(Number(numero1) + Number(numero2))
 document.write('<br>')
 document.write(numero3 * numero4)
-*/
 
 let numero1= prompt("Ingrese el primer numero ");
 let numero2= prompt("ingrese el segundo numero ");
@@ -95,9 +94,26 @@ document.write("La multiplicacion da " + Number(numero1) * Number(numero2) * Num
 
 let peso= prompt("Ingrese su peso en kg");
 let altura= prompt("Ingrese su altura en cm");
-document.write("Tu indice de masa corporal es " + Number(peso)/ Math.pow(Number(altura), 2)
+document.write("Tu indice de masa corporal es " + Number(peso)/ Math.pow(Number(altura), 2))
+*/
 
+/* Ejercicio: hacer una calculadora de las 4 operaciones básicas
+   Reglas: el usuario elige la operación y no se puede dividir por 0 
+*/
 
+let operacion= prompt("Elija la operación")
+let numero1= prompt("Ingrese el primer número ")
+let numero2= prompt("Ingrese el segunod número")
+
+if (operacion == "suma"){
+    document.write(Number(numero1) + Number(numero2));
+} else if (operacion == "resta"){
+    document.write(Number(numero1) - Number(numero2))
+} else if (operacion == "multiplicacion"){
+    document.write(Number(numero1) * Number(numero2))
+} else if (operacion == "divison") && numero2 != "0" {
+    document.write(Number(numero1) / Number(numero2))
+} 
 </script>
 </body>
 </html>
