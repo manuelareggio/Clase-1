@@ -70,3 +70,89 @@ para vincular mi JV con mi html lo que hago es
 <script src="./script.js">
 </script> 
 */
+
+/*
+funcion: conjunto de instrucciones
+
+la puedo declarar (crearla) o invocarla (utilizarla)
+
+YAGNI: creo la funcion a medida que la necesito 
+*/
+/*
+function saludar(){ // declarando 
+    console.log("Hola estudiante!")
+
+}
+*/
+//invocar 
+saludar()
+
+//estructura basica de una funcion: function nombre (){ instrucciones }
+
+// parametro: valor que va a ingresar el usuario, como un comodin
+
+function siguiente(numero){
+console.log(numero+1)
+}
+siguiente(1)
+
+function saludarConParametro(nombre){
+    console.log("Hola " + nombre)
+}
+
+saludarConParametro("Manu")
+
+// los parametros nos permiten reemplazar el codigo dentro de la funcion con el valor que nos pase el usuario 
+
+/*************************/
+
+function sumarDos(numero1, numero2){
+    let resultado = numero1 + numero2
+    return resultado
+}
+
+function mostrar (visible){
+    console.log(visible)
+}
+mostrar(sumarDos(1,2)) //aca estoy haciendo una doble invocación, es una función dentro de otra 
+ //tu console.log no deberia estar dentro de la función, con return le digo bueno, este es el resultado, agarralo vos. 
+
+/*******************/
+
+function calculadora (numero1,numero2,operacion){
+
+    if(operacion === "+"){
+
+        return numero1 + numero2
+}
+else if(operacion === "-"){
+
+        return numero1 - numero2
+}
+ else if(operacion === "*"){
+
+        return numero1 * numero2
+}
+ else if(operacion === "/"){
+
+        if(numero2 !== 0){
+        return numero1 / numero2}
+        
+        else{
+
+            return "No se puede dividir por cero"
+ }
+    }else{
+        return "Ingrese una operación valida"
+    }
+}
+
+/*******************/
+
+//los ambitos son casas dpnde viven las variables 
+
+let variableNombre = "Manu" //esta varaibale es global pq no pertenece a ningun ambito 
+
+function saludarALaVariable(){
+    return "Hola " + variableNombre + edad
+}
