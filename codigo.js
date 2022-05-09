@@ -5,7 +5,7 @@
 // Abstraccion: achicar el problema, eliminar lo superfluo//
 // Algoritmos: pasos para resolver el problema//
 
-console.log("Hola mundo")
+/*console.log("Hola mundo")
 document.write('La Web de Manu');
 
 /*
@@ -79,19 +79,20 @@ la puedo declarar (crearla) o invocarla (utilizarla)
 YAGNI: creo la funcion a medida que la necesito 
 */
 /*
+//funciones declaradas 
 function saludar(){ // declarando 
     console.log("Hola estudiante!")
 
 }
 */
 //invocar 
-saludar()
+/*saludar()
 
 //estructura basica de una funcion: function nombre (){ instrucciones }
 
 // parametro: valor que va a ingresar el usuario, como un comodin
 
-function siguiente(numero){
+/*function siguiente(numero){
 console.log(numero+1)
 }
 siguiente(1)
@@ -106,7 +107,7 @@ saludarConParametro("Manu")
 
 /*************************/
 
-function sumarDos(numero1, numero2){
+/*function sumarDos(numero1, numero2){
     let resultado = numero1 + numero2
     return resultado
 }
@@ -119,7 +120,7 @@ mostrar(sumarDos(1,2)) //aca estoy haciendo una doble invocación, es una funci�
 
 /*******************/
 
-function calculadora (numero1,numero2,operacion){
+/*function calculadora (numero1,numero2,operacion){
 
     if(operacion === "+"){
 
@@ -147,12 +148,104 @@ else if(operacion === "-"){
     }
 }
 
+mostrar(calculadora(1,2,"+"))
+mostrar(calculadora(2,3,"-"))
+mostrar(calculadora(5,10,"*"))
+mostrar(calculadora(8,4,"/"))
+
 /*******************/
 
-//los ambitos son casas dpnde viven las variables 
+//los ambitos son casas habitan los valores 
+//las variables van a vivir dentro de =/ ambitos 
+//SCOPE es el ambito donde habitan las variables 
+//no puedo volver a declarar otra variable con el mismo nombre pero si puedo si estas se encuentran en diferentes ambitos, scopes 
 
-let variableNombre = "Manu" //esta varaibale es global pq no pertenece a ningun ambito 
 
-function saludarALaVariable(){
-    return "Hola " + variableNombre + edad
+/*let variableNombre = "Manu" //esta varaibale es global pq no pertenece a ningun ambito, quiere decir que todas las funciones van a poder aceder a esta variable
+function nuevoAmbito(){ //variable local 
+    let edad = 19
+    let variableNueva;
+    return edad 
 }
+function saludarALaVariable(){
+    return "Hola " + variableNombre +" " + nuevoAmbito() 
+    let variableNueva
+}
+
+mostrar(saludarALaVariable())
+
+/*******************/
+
+//funciones anonimas o expresadadas, no tienen un nombre y habitan dentro de una variable 
+
+/*let suma = function(a,b){
+    return a + b 
+}
+
+let resta =  function(a,b){
+    return a - b 
+}
+
+//diferencia de declaradas vs expresadas 
+
+mostrar(duplicarDeclarada(4))
+//mostrar(duplicarExpresada(5))
+//RefernceError: cannot access 'duplicarExpresada' before initialization 
+
+/*function duplicarDeclarada(numero){
+    return numero * 2
+}
+
+let duplicarExpresada = function(numero){
+    return numero * 2
+}
+mostrar(duplicarExpresada(5))
+//principal problema de las funciones expresadas, que no puedo invocarlas previas a su inicializacion 
+
+/*******************/
+
+//funcion flecha, es similar a las funciones expresadas pero con la sintaxis,
+//la forma de escribirlas más acotada
+/* function multiplicar(a,b){return a * b}
+*
+*
+*/
+//esta es la funcion flecha, me ahorra hacer lo de arriba, es menos sintaxis lo que tengo que escribir 
+/*let multiplicar = (a,b) => a * b // >1 parametro va con parentesis
+let siguienteFlecha = numero => numero + 1 
+mostrar(siguienteFlecha(1))
+mostrar(multiplicar(2,2))
+
+/* EJERCICIOS DE PRACTICA 
+
+-Calcular costo total de productos y/o servicios seleccionados para el usuario.
+-Calcular pagos en cuotas sobre un monto determinado.
+-Calcular el valor final de un producto seleccionado en función de impuestos y descuentos.
+-Calcular el tiempo de espera promedio en relación a la cantidad de turnos registrados.
+-Calcular edad promedio de personas registradas. 
+-Calcular nota final de alumnos ingresados.
+-Nos indique si el número es par o impar.  
+*/
+/*
+function costoTotal(precio, cantidad){
+    return "Tu costo total es " + (precio * cantidad)  
+}
+
+function calcularCostos (eleccion1,eleccion2,eleccion3){
+    let costoTotal = 0
+    servicio1=1000
+    servicio2=2000
+    servicio3=3000
+    if(eleccion1=="limpieza de cutis" || eleccion2 =="limpieza de cutis" || eleccion3 == "limpieza de cutis"){
+        costoTotal = costoTotal + servicio1;
+   }
+    if(eleccion1=="uñas esculpidas" || eleccion2 =="uñas esculpidas" || eleccion3 == "uñas esculpidas"){
+        costoTotal = costoTotal + servicio2;
+   }
+    if(eleccion1=="uñas encarnadas" || eleccion2 =="uñas encarnadas" || eleccion3 == "uñas encarnadas"){
+        costoTotal = costoTotal + servicio3;
+   }
+   return costoTotal
+    }
+    mostrar(calcularCostos("limpieza de cutis","uñas esculpidas","limpieza de cutis"))
+*/
