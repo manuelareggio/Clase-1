@@ -249,3 +249,22 @@ function calcularCostos (eleccion1,eleccion2,eleccion3){
     }
     mostrar(calcularCostos("limpieza de cutis","uñas esculpidas","limpieza de cutis"))
 */
+
+/*
+Array: conjunto de variables. 
+ let profesor = ["esteban", 29, "profesor"]
+ console.log(profesor)
+ console.log(profesor[0/])
+
+ console.log(profesor[0]) ----> esto me devuelve esteban, porque la primera posicion es 0 
+
+let profesor = ["Esteban", 29, "profesor", true]
+ for (let i = 0; i < 4; i++){
+     console.log(profesor[i])
+ }
+
+ let profesor = ["Esteban", 29, "profesor", true]
+console.log(profesor.lenght)
+ for (let i = 0; i < profesor.length; i++){
+     console.log(profesor[i])
+ }
