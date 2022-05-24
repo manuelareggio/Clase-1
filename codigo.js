@@ -267,4 +267,6 @@ let profesor = ["Esteban", 29, "profesor", true]
 console.log(profesor.lenght)
  for (let i = 0; i < profesor.length; i++){
      console.log(profesor[i])
- }
+ } 
+
+ 
