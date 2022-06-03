@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +10,28 @@
 </head>
 <body>
     <header> 
-    <h1> El titular </h1>    
-    <p> Este texto es <strong> negrita </strong></p>
-    <!-- p, "Este texto es", strong, negrita son los 4 noodos que se identifican-->
+    <main> 
+        <div id="primera-parte"> 
+            <h1> El titular </h1>    
+            <p> Este texto es <strong> negrita </strong></p>
+            <!-- p, "Este texto es", strong, negrita son los 4 noodos que se identifican-->
+    </div>
+    <div id="segunda-parte"> 
+        <p id="pConId">Id</p>
+        <p class="pConClass">Class</p>
+        <p>Tag</p>
+
+    </div>   
+    </main>
+    
     </header>
     <main></main>
     <footer></footer>
 </body>
 <script> 
-console.log("soy interno")
+    console.log("soy interno")
 </script>
-<script src="main.js"></script> </script>
+<script src="main.js"></script> 
 </html>
 <!-- hay dos formas de enlazar html con jv, ambas se haven con la etiqueta script-->
 <!---document-->
