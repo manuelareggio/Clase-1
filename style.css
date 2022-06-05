@@ -31,6 +31,7 @@ body{background-color:#EDE7DC;}
     position: fixed;
     bottom: 30px;
     right: 20px; 
+    color: black;
 }
 
 header{
@@ -42,6 +43,7 @@ h1{
   color: black;
   font-style: italic;
   font-size: 300%;
+  text-align: center;
 }
 
 img{
@@ -56,7 +58,7 @@ img{
 .image {
   display: block;
   width: 200%;
-  ;
+
 }
 
 .overlay {
@@ -88,3 +90,30 @@ img{
   transform: translate(-50%, -50%);
   text-align:center;
 }
+
+h2{
+  font-size: 400%;
+  font-style: italic;
+  color: black;
+  text-align: center;
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3{
+  color: black;
+  font-size: 170%;
+  font-style: italic;
+}
+
