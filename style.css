@@ -30,14 +30,10 @@ body{margin:0;
 .topnav a.active {
   background-color: burlywood;
   color: white;
+  
 }
 
-#iconowpp{
-    position: fixed;
-    bottom: 30px;
-    right: 20px; 
-    color: black;
-}
+
 
 header{
   text-align: center;
@@ -134,3 +130,4 @@ h3{
   color:black;
   text-decoration: underline;
 }
+
