@@ -24,7 +24,7 @@
       <p class="title">
         Budín de banana con canela, harina integral y chocolate al 70%.
       </p>
-      <p>70 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -34,7 +34,7 @@
       />
       <h1>Muffins de Arándanos</h1>
       <p class="title">Muffins de azúcar mascabo y arandanos.</p>
-      <p>185 kcal por muffin.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -46,7 +46,7 @@
       <p class="title">
         Suaves alfajores de harina de almendra rellenos de crema de pistacho.
       </p>
-      <p>150 kcal por macaron.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -59,7 +59,7 @@
         Budín de limón y naranja con semillas de amapola, decorado con glacé de
         limón y finas rodajas de este.
       </p>
-      <p>203 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -71,7 +71,7 @@
       <p class="title">
         Tarta rellena de duraznos cocidos en licor y especias.
       </p>
-      <p>145 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -83,7 +83,7 @@
       <p class="title">
         Torta de tres pisos de vainilla rellenos con mermelada de maracuya.
       </p>
-      <p>321 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -95,7 +95,7 @@
       <p class="title">
         Tarta hecha con base de nueces, rellena de frutillas frescas.
       </p>
-      <p>97 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -108,7 +108,30 @@
         Barras de avena y frambuesa cubiertas con crumble de avena y glacé de
         limón.
       </p>
-      <p>67 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
+    <!--Suma Carrito-->
+<div class="row mx-4">
+  <div class="col">
+      <h4 id="Total">TOTAL: $0</h4>
+  </div>
+
+  <div id="botones" class="col d-flex justify-content-end">
+     <button type="button" class="botoncarrito" onclick="Borrar()" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">
+  Vaciar Carrito</button>
+   </div> 
+  </div>
+  <script>
+    let Total = 0;
+  
+      function sumarprecio(precio) {
+        Total = Total + precio;
+        document.getElementById("Total").innerText = "TOTAL: $" + Total;
+        document.getElementById("importeTotal").innerText = " $" + Total;
+      }
+      function Borrar() {
+        Total = 0;
+        document.getElementById("Total").innerHTML = "El total actual es: " + "$" + 0;
+      }</script>
   </body>
 </html>

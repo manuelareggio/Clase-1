@@ -26,7 +26,7 @@
       <p class="title">
         Húmedas cookies hechas con azúcar integral y chips de chocolate amargo.
       </p>
-      <p>100 kcal por cookie.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -39,7 +39,7 @@
         Triple bizcochuelo de chocolate, relleno y cubierto con ganache batido
         de nutella.
       </p>
-      <p>251 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -52,7 +52,7 @@
         Suaves alfajores de harina de almendra rellenos de crema de chocolate
         amargo.
       </p>
-      <p>150 kcal por macaron.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -64,7 +64,7 @@
       <p class="title">
         Cupckakes humedecidos con licor y decorados con ganache de chocolate.
       </p>
-      <p>300 kcal por cupcake.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -76,7 +76,7 @@
       <p class="title">
         Cuadrados húmedos de chocolate amaergo decorados con sal.
       </p>
-      <p>170 kcal por cuadrado.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
 
     <div class="card">
@@ -90,7 +90,7 @@
         Donas de harina de almendra y chocolate amargo, cubiertos con chocolate
         derretido.
       </p>
-      <p>281 kcal por dona.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -103,7 +103,7 @@
         Budín de chocolate sin harinas, cubierto con ganache de chocolate
         amargo.
       </p>
-      <p>290 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -115,7 +115,30 @@
       <p class="title">
         Bollo fino hecho con pasta choux, rellenos de crema de chocolate.
       </p>
-      <p>312 kcal por eclair.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
+    <!--Suma Carrito-->
+<div class="row mx-4">
+  <div class="col">
+      <h4 id="Total">TOTAL: $0</h4>
+  </div>
+
+  <div id="botones" class="col d-flex justify-content-end">
+     <button type="button" class="botoncarrito" onclick="Borrar()" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">
+  Vaciar Carrito</button>
+   </div> 
+  </div>
+  <script>
+    let Total = 0;
+  
+      function sumarprecio(precio) {
+        Total = Total + precio;
+        document.getElementById("Total").innerText = "TOTAL: $" + Total;
+        document.getElementById("importeTotal").innerText = " $" + Total;
+      }
+      function Borrar() {
+        Total = 0;
+        document.getElementById("Total").innerHTML = "El total actual es: " + "$" + 0;
+      }</script>
   </body>
 </html>

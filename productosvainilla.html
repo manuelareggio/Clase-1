@@ -25,12 +25,14 @@
         src="./Imagenes /cookies col 1.jpeg"
         alt="Cookies de Vainilla con Chips"
         style="width: 65%; padding-top: 10px"
+        
       />
-      <h2>Cookies con Chips de Chocolate</h2>
+      <h1>Cookies con Chips </h1>
       <p class="title">
         Húmedas cookies hechas con azúcar integral y chips de chocolate amargo.
       </p>
-      <p>100 kcal por cookie.</p>
+ 
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -42,7 +44,7 @@
       <p class="title">
         Cupckakes humedecidos con licor y decorados con buttercream de vainilla.
       </p>
-      <p>300 kcal por cupcake.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -54,7 +56,7 @@
       <p class="title">
         Suaves alfajores de harina de almendra rellenos de crema de vainilla.
       </p>
-      <p>150 kcal por macaron.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -64,7 +66,8 @@
       />
       <h1>Blondies</h1>
       <p class="title">"Brownies" de vainilla y canela.</p>
-      <p>270 kcal por porción.</p>
+      <br>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -76,7 +79,7 @@
       <p class="title">
         Bizcochuelo relleno de crema y nueces pecan caramelizadas.
       </p>
-      <p>297 kcal por porción de torta.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -89,7 +92,7 @@
         Budín de vainilla con chips de chocolate cubierto con chocolate
         derretido.
       </p>
-      <p>230 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -102,7 +105,7 @@
         Bollo fino hecho con pasta choux cubiertos con chocolate blanco y
         decorado con nueces.
       </p>
-      <p>310 kcal por eclair.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
     <div class="card">
       <img
@@ -115,7 +118,32 @@
         Tarta a base de galletitas de vainilla relleno con una crema de leche
         condensada, decorado con chips de chocolate amargo.
       </p>
-      <p>220 kcal por porción.</p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
     </div>
+
+   
+<div class="row mx-4">
+  <div class="col">
+      <h4 id="Total">TOTAL: $0</h4>
+  </div>
+
+  <div id="botones" class="col d-flex justify-content-end">
+     <button type="button" class="botoncarrito" onclick="Borrar()" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">
+  Vaciar Carrito</button>
+   </div> 
+  </div>
+  <script>
+  let Total = 0;
+
+    function sumarprecio(precio) {
+      Total = Total + precio;
+      document.getElementById("Total").innerText = "TOTAL: $" + Total;
+      document.getElementById("importeTotal").innerText = " $" + Total;
+    }
+    function Borrar() {
+      Total = 0;
+      document.getElementById("Total").innerHTML = "El total actual es: " + "$" + 0;
+    }</script>
+    <p>holaaaaa</p>
   </body>
 </html>
