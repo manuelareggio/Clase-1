@@ -1,3 +1,4 @@
+//visto en clase práctica//
 // Resolver problemas logicos o amtematicos//
 // La programacion es una herramienta para resolver problemas//
 // Descomosicion: descomponer el problema//
@@ -267,6 +268,5 @@ let profesor = ["Esteban", 29, "profesor", true]
 console.log(profesor.lenght)
  for (let i = 0; i < profesor.length; i++){
      console.log(profesor[i])
- } 
-
- 
+ }
+ */

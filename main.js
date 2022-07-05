@@ -1,3 +1,4 @@
+//visto en clase práctica//
 console.log("Soy externo");
 //Para acceder a un Id
 let parrafo1 = document.getElementById("pConId");

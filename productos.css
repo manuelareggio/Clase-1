@@ -65,7 +65,6 @@ a:hover {
   overflow: hidden;
   padding: 25px;
   color: #4c4e56;
-  
 }
 
 .creditCardForm label {
@@ -143,18 +142,14 @@ a:hover {
   opacity: 0.2;
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .creditCardForm .owner,
   .creditCardForm .CVV,
   .creditCardForm #expiration-date,
   .creditCardForm #credit_cards {
-      width: 100%;
+    width: 100%;
   }
   .creditCardForm #credit_cards {
-      text-align: left;
+    text-align: left;
   }
 }
-
-
-
-
