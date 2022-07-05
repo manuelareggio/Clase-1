@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    
+    <link rel="stylesheet" href="./productos.css" />
+    <div class="topnav">
+      <a class="active" href="./index.html#Home">Home</a>
+      <a href="./index.html#Productos">Nuestros Productos</a>
+      <a href="./index.html#DondeEncontrarnos">Donde Encontrarnos</a>
+      <a href="./index.html#Contacto">Contacto</a>
+    </div>
+  </head>
+  
+  <h1 id="#ProductosDeVainilla" style="text-align:center;margin-top: 70px;">PRODUCTOS DE VAINILLA</h1>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <div class="card">
+      <img
+        src="./Imagenes /cookies col 1.jpeg"
+        alt="Cookies de Vainilla con Chips"
+        style="width: 65%; padding-top: 10px"
+        
+      />
+      <h1>Cookies con Chips </h1>
+      <p class="title">
+        Húmedas cookies hechas con azúcar integral y chips de chocolate amargo.
+      </p>
+ 
+      <button onclick="sumarprecio(300)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Cupcakesvainilla.jpeg"
+        alt="Cupcakes de Vainilla"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1>Cupcakes de Vainilla</h1>
+      <p class="title">
+        Cupckakes humedecidos con licor y decorados con buttercream de vainilla.
+      </p>
+      <button onclick="sumarprecio(500)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Macaronsvainilla.jpeg"
+        alt="Macarons de Vainilla"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1>Macarons de Vainilla</h1>
+      <p class="title">
+        Suaves alfajores de harina de almendra rellenos de crema de vainilla.
+      </p>
+      <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Blondies.jpeg"
+        alt="Blondies"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1>Blondies</h1>
+      <p class="title">"Brownies" de vainilla y canela.</p>
+      <br>
+      <button onclick="sumarprecio(100)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Torta de vainilla y nueces.jpeg"
+        alt="Torta de Vainilla y Nueces"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1>Torta de Vainilla y Nueces</h1>
+      <p class="title">
+        Bizcochuelo relleno de crema y nueces pecan caramelizadas.
+      </p>
+      <button onclick="sumarprecio(3000)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Budinvainilla.jpeg"
+        alt="Budín de Vainilla con Chips"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1 style="font-size: 200%">Budín de Vainilla con Chips de Chocolate</h1>
+      <p class="title">
+        Budín de vainilla con chips de chocolate cubierto con chocolate
+        derretido.
+      </p>
+      <button onclick="sumarprecio(1500)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Eclairsvainilla.jpeg"
+        alt="Eclairs de Vainilla"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h2 style="font-size: 212%">Eclairs de Vainilla</h2>
+      <p class="title">
+        Bollo fino hecho con pasta choux cubiertos con chocolate blanco y
+        decorado con nueces.
+      </p>
+      <button onclick="sumarprecio(400)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+    </div>
+    <div class="card">
+      <img
+        src="./Imagenes /Pievainilla.jpeg"
+        alt="Tarta de Vainilla"
+        style="width: 65%; padding-top: 10px"
+      />
+      <h1 id="choc">Tarta de Vainilla</h1>
+      <p class="title">
+        Tarta a base de galletitas de vainilla relleno con una crema de leche
+        condensada, decorado con chips de chocolate amargo.
+      </p>
+      <button onclick="sumarprecio(990)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+    </div>
+
+<div>
+  <h1 style="text-align:center">PRODUCTOS DE CHOCOLATE</h1>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Cookiechoc.jpeg"
+    alt="Cookies de Chocolate Amargo"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Cookies de Chocolate Amargo</h2>
+  <p class="title">
+    Húmedas cookies hechas con azúcar integral y chips de chocolate amargo.
+  </p>
+  <button onclick="sumarprecio(300)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Nutella Cake.jpeg"
+    alt="Torta de Chocolate con Ganache de Nutella"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Torta de Chocolate con Ganache de Nutella</h2>
+  <p class="title">
+    Triple bizcochuelo de chocolate, relleno y cubierto con ganache batido
+    de nutella.
+  </p>
+  <button onclick="sumarprecio(2700)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Macarons.jpeg.png"
+    alt="Macarons con Ganache de Chocolate Amargo"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Macarons con Ganache de Chocolate Amargo</h2>
+  <p class="title">
+    Suaves alfajores de harina de almendra rellenos de crema de chocolate
+    amargo.
+  </p>
+  <button onclick="sumarprecio(175)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Cupcakes.jpeg.png"
+    alt="Cupckaes de Chocolate Amargo"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Cupcakes de Chocolate Amargo</h2>
+  <p class="title">
+    Cupckakes humedecidos con licor y decorados con ganache de chocolate.
+  </p>
+  <button onclick="sumarprecio(276)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Brownies.jpeg"
+    alt="Brownies"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Brownies</h2>
+  <p class="title">
+    Cuadrados húmedos de chocolate amaergo decorados con sal.
+  </p>
+  <button onclick="sumarprecio(200)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+
+<div class="card">
+  <img
+    src="./Imagenes /Donaschoc.jpeg"
+    alt="Donas Bañadas"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Donas Bañadas</h2>
+  <p class="title">
+    Donas de harina de almendra y chocolate amargo, cubiertos con chocolate
+    derretido.
+  </p>
+  <button onclick="sumarprecio(370)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Budin.jpeg"
+    alt="Budín Húmedo de Chocolate"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2>Budín Húmedo de Chocolate</h2>
+  <p class="title">
+    Budín de chocolate sin harinas, cubierto con ganache de chocolate
+    amargo.
+  </p>
+  <button onclick="sumarprecio(1000)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Eclairs.jpeg"
+    alt="Eclairs"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h2 id="frut">Eclairs</h2>
+  <p class="title">
+    Bollo fino hecho con pasta choux, rellenos de crema de chocolate.
+  </p>
+  <button onclick="sumarprecio(475)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<h1 id="#ProductosFrutales" style="text-align:center;margin-top: 70px;">PRODUCTOS FRUTALES</h1>
+<div class="card">
+  <img
+    src="./Imagenes /Budinbanana.jpeg"
+    alt="Budín de Banana con Chips de Chocolate"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1 style="font-size: 170%">Budín de Banana con Chips de Chocolate</h1>
+  <p class="title">
+    Budín de banana con canela, harina integral y chocolate al 70%.
+  </p>
+  <button onclick="sumarprecio(800)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Blueberrymuffins.jpeg"
+    alt="Muffins de Arándanos"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Muffins de Arándanos</h1>
+  <p class="title">Muffins de azúcar mascabo y arandanos.</p>
+  <button onclick="sumarprecio(300)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Pistachio Macarons.jpeg"
+    alt="Macarons de Pistacho"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Macarons de Pistacho</h1>
+  <p class="title">
+    Suaves alfajores de harina de almendra rellenos de crema de pistacho.
+  </p>
+  <button onclick="sumarprecio(350)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Budinlimon.jpeg"
+    alt="Budín de Limón"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Budín de Limón</h1>
+  <p class="title">
+    Budín de limón y naranja con semillas de amapola, decorado con glacé de
+    limón y finas rodajas de este.
+  </p>
+  <button onclick="sumarprecio(1100)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Piedurazno.jpeg"
+    alt="Pie de Durazno"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Pie de Durazno</h1>
+  <p class="title">
+    Tarta rellena de duraznos cocidos en licor y especias.
+  </p>
+  <button onclick="sumarprecio(2000)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Tortamaracuya.jpeg"
+    alt="Torta de Maracuya"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Torta de Maracuya</h1>
+  <p class="title">
+    Torta de tres pisos de vainilla rellenos con mermelada de maracuya.
+  </p>
+  <button onclick="sumarprecio(4000)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Tartafrutilla.jpeg"
+    alt="Tarta de Frutilla"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1>Tarta de Frutilla</h1>
+  <p class="title">
+    Tarta hecha con base de nueces, rellena de frutillas frescas.
+  </p>
+  <button onclick="sumarprecio(1800)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+<div class="card">
+  <img
+    src="./Imagenes /Barritasframbuesa.jpeg"
+    alt="Barritas de Frambuesa"
+    style="width: 65%; padding-top: 10px"
+  />
+  <h1 style="font-size: 185%">Barritas de Frambuesa</h1>
+  <p class="title">
+    Barras de avena y frambuesa cubiertas con crumble de avena y glacé de
+    limón.
+  </p>
+  <button onclick="sumarprecio(200)" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">Agregar a la cesta</button>
+</div>
+
+<div class="row mx-4">
+    <div class="col">
+        <h4 id="PrimerTotal">TOTAL: $0</h4>
+    </div>
+    <button type="button" class="botoncarrito" onclick="Borrar()" style="border:#ccafa5; background-color:#ccafa5; color:black;height: 30px;margin-bottom: 10px;">
+        Vaciar Carrito</button>
+    <script>
+        let  PrimerTotal = 0;
+      
+          function sumarprecio(primerprecio) {
+            PrimerTotal = PrimerTotal + primerprecio;
+            document.getElementById("PrimerTotal").innerText = "TOTAL: $" + PrimerTotal;
+            document.getElementById("importeTotal").innerText = " $" + PrimerTotal;
+          }
+          function Borrar() {
+            PrimerTotal = 0;
+            document.getElementById("PrimerTotal").innerHTML = "Total actual: " + "$" + 0;
+          }</script>
+  <div class="creditCardForm">
+    <div class="heading">
+        <h1>Confirmar Compra</h1>
+    </div>
+    <div class="payment">
+        <form role="form" name="form"> 
+            <div class="form-group owner">
+                <label for="owner">Dueño</label>
+                <input type="text" class="form-control" id="owner">
+            </div>
+            <div class="form-group CVV">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv">
+            </div>
+            <div class="form-group" id="card-number-field">
+                <label for="cardNumber">Número de Tarjeta</label>
+                <input type="text" class="form-control" id="cardNumber">
+            </div>
+            <div class="form-group" name="expiration-date">
+                <label> Fecha de Vencimiento </label>
+                <select>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero </option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <select>
+                    <option value="16"> 2022</option>
+                    <option value="17"> 2023</option>
+                    <option value="18"> 2024</option>
+                    <option value="19"> 2025</option>
+                    <option value="20"> 2026</option>
+                    <option value="21"> 2027</option>
+                </select>
+            </div>
+            <div class="form-group" id="credit_cards">
+                <img src="./Imagenes /tarjetavisa.jpg" id="visa" style="width:50px; ">
+                <img src="./Imagenes /tarjetamaster.jpg" id="mastercard" style="width:50px">
+                <img src="./Imagenes /tarjetaamex.jpg" id="amex" style="width:50px">
+            </div>
+            <div class="form-group" id="pay-now">
+                <button type="submit" class="btn btn-default" id="confirm-purchase" onclick=" javascript: mensajepago()">Confirmar
+                </button>
+              </form>
+               <script>
+                 function mensajepago() {
+  if (
+    document.forms["form"].owner.value == "" ||
+    document.forms["form"].cardNumber.value == "" ||
+    document.forms["form"].expiration-date.value == "" ||
+    document.forms["form"].cvv.value == ""
+  ) {
+    alert("Faltan ingresar datos");
+
+  } }
+               </script>
+            </div>
+        </form>
+    </div>
+</div>
+  <div id="botones" class="col d-flex justify-content-end">
+  
+   </div> 
+  </div>
+  
+   
+  </body>
+</html>
